@@ -1,0 +1,4 @@
+{
+    "title": "Daily JSJSTIME",
+    "plugins": ["etoc", "splitter", "expandable-chapters-small", "toggle-chapters"]
+}
