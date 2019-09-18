@@ -1,0 +1,680 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>let, const, var · Daily JSJSTIME</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-etoc/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.template_literal.html" />
+    
+    
+    <link rel="prev" href="1.callback.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JSJSTIME</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    es6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="1.callback.html">
+            
+                <a href="1.callback.html">
+            
+                    
+                    callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2" data-path="2.let_const_var.html">
+            
+                <a href="2.let_const_var.html">
+            
+                    
+                    let, const, var
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="3.template_literal.html">
+            
+                <a href="3.template_literal.html">
+            
+                    
+                    template literal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="4.arrow_function.html">
+            
+                <a href="4.arrow_function.html">
+            
+                    
+                    arrow function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="5.multiple_return_value.html">
+            
+                <a href="5.multiple_return_value.html">
+            
+                    
+                    multiple return value
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="6.for_of_iterable.html">
+            
+                <a href="6.for_of_iterable.html">
+            
+                    
+                    for of iterable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2019년</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../201909/">
+            
+                <a href="../201909/">
+            
+                    
+                    9월
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../201909/17/20190917_je.html">
+            
+                <a href="../201909/17/20190917_je.html">
+            
+                    
+                    자바스크립트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../201909/17/20190917_sh.html">
+            
+                <a href="../201909/17/20190917_sh.html">
+            
+                    
+                    객체지향
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >let, const, var</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!-- page_number: true -->
+<h1 id="js-js-time">JS JS TIME</h1>
+<h5 id="chapter-2-letconst--var">chapter 2. let,const / var</h5>
+<h6 id="20190105">2019.01.05</h6>
+<hr>
+<h2 id="whats-the-es6">What&apos;s the es6</h2>
+<p><code>javascript</code>&#xC758; &#xD310;&#xC744; &#xB2E4;&#xB8E8;&#xB294;&#xB370; &#xC788;&#xC5B4;&#xC11C;, &#xC0AC;&#xB78C;&#xB4E4;&#xC740; <code>es</code>&#xB77C;&#xB294; &#xC2A4;&#xD3A0;&#xC5D0; &#xC22B;&#xC790;&#xB97C; &#xC368;&#xC11C; &#xD45C;&#xD604;&#xD558;&#xACE4; &#xD569;&#xB2C8;&#xB2E4;. &#xACFC;&#xC5F0; <code>es</code> &#xC989; <code>ECMAScript</code>&#xB294; &#xC5B4;&#xB514;&#xC11C; &#xC2DC;&#xC791;&#xB41C; &#xB9D0;&#xC77C;&#xAE4C;&#xC694;?</p>
+<p><b> &#xC774;&#xB97C; &#xC54C;&#xAE30;&#xC704;&#xD574;&#xC120; &#xBA3C;&#xC800; <code>ECMA</code>&#xB77C;&#xB294; &#xB2E8;&#xCCB4;&#xC758; &#xC815;&#xCCB4;&#xB97C; &#xC54C;&#xC544;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;.  </b></p>
+<hr>
+<h2 id="ecma">ECMA</h2>
+<blockquote>
+<p>ECMA&#xB780; European Computer Manufactures Association&#xC5D0;&#xC11C; &#xCD9C;&#xBC1C;&#xD558;&#xC5EC; 1994&#xB144;&#xC5D0; &#xC815;&#xBCF4; &#xD1B5;&#xC2E0; &#xAE30;&#xC220; &#xD45C;&#xC900; &#xC5F0;&#xAD6C;&#xD68C;&#xC758; &#xC758;&#xBBF8;&#xB85C;&#xC11C; &#xBCC0;&#xACBD;&#xB41C; &#xAE30;&#xAD00;&#xBA85; &#xC785;&#xB2C8;&#xB2E4;. &#xADF8; &#xACB0;&#xACFC; &#xB354;&#xC774;&#xC0C1; ECMA&#xB294; &#xB2E8;&#xC5B4;&#xC758; &#xC55E;&#xAE00;&#xC790;&#xB97C; &#xB530;&#xC11C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xAE00;&#xC790;&#xAC00; &#xC544;&#xB2CC; &#xADF8; &#xC790;&#xCCB4;&#xB85C;&#xC758; &#xC758;&#xBBF8;&#xB97C; &#xAC00;&#xC9C0;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;. &#xC774; &#xD611;&#xD68C;&#xB294; &#xB2E4;&#xC591;&#xD55C; &#xC5B8;&#xC5B4;&#xB098; &#xADDC;&#xACA9;&#xC5D0; &#xB300;&#xD55C; &#xD45C;&#xC900;&#xC744; &#xC815;&#xC758;&#xD558;&#xAC8C; &#xB418;&#xB294;&#xB370; &#xADF8; &#xC911; &#xD558;&#xB098;&#xAC00; ECMA-262 &#xC785;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<hr>
+<table>
+<thead>
+<tr>
+<th>&#xD310;</th>
+<th>&#xCD9C;&#xD310;&#xC77C;</th>
+<th>&#xD2B9;&#xC9D5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1997.6</td>
+<td>&#xCD08;&#xD310;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1998.6</td>
+<td>ISO/IEC 16262 &#xAD6D;&#xC81C; &#xD45C;&#xC900;&#xACFC; &#xC644;&#xC804;&#xD788; &#xB3D9;&#xC77C;&#xD55C; &#xADDC;&#xACA9;&#xC744; &#xC801;&#xC6A9;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1999.12</td>
+<td>&#xC815;&#xADDC; &#xD45C;&#xD604;&#xC2DD;, &#xBB38;&#xC790;&#xC5F4; &#xCC98;&#xB9AC;, &#xC81C;&#xC5B4;&#xBB38;, &#xC608;&#xC678;&#xCC98;&#xB9AC;, &#xC624;&#xB958; &#xC815;&#xC758;, &#xC218;&#xCE58;&#xD615; &#xCD9C;&#xB825; &#xD3EC;&#xB9F7;&#xD305;&#xB4F1; &#xC5B8;&#xC5B4;&#xB85C;&#xC11C;&#xC758; &#xAE30;&#xB2A5; &#xCD94;&#xAC00;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>-</td>
+<td>&#xC815;&#xCE58;&#xC801; &#xCC28;&#xC774; &#xBC0F; &#xC774;&#xC288; &#xBC0F; &#xB108;&#xBB34; &#xAE09;&#xACA9;&#xD55C; &#xBCC0;&#xD654;&#xC5D0; &#xB300;&#xD574; &#xBC18;&#xB300;&#xAC00; &#xC2EC;&#xD558;&#xC5EC; &#xD3D0;&#xAE30;&#xB418;&#xC5C8;&#xB2E4;. &#xC774;&#xB54C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4; &#xC2A4;&#xD399;&#xC740; 5&#xD310;&#xC758; &#xAE30;&#xBCF8;&#xC774; &#xB418;&#xC5C8;&#xB2E4;.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2009.12</td>
+<td>&#xB354; &#xC815;&#xD655;&#xD55C; &#xC624;&#xB958;&#xAC80;&#xC0AC; &#xC9C0;&#xC6D0;, &#x201C;strict mode&#x201D;&#xC9C0;&#xC6D0;, Object.define &#xC9C0;&#xC6D0; &#xB4F1;&#xC744; &#xD568;&#xC73C;&#xB85C;&#xC368; read only property&#xB4F1;&#xC744; &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xBCC0;&#xACBD;&#xB418;&#xC5C8;&#xB2E4;.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2015.6</td>
+<td>Class, Module&#xB4F1;&#xC758; &#xAE30;&#xB2A5;&#xC744; &#xC9C0;&#xC6D0;&#xD55C;&#xB2E4;. &#x201C;ECMAScript Harmony&#x201D;, &#x201C;ES6 Harmony&#x201D;, &#x201C;ECMAScript 2015&#x201D;&#xB4F1;&#xC73C;&#xB85C; &#xBD88;&#xB9AC;&#xC6CC;&#xC9C4;&#xB2E4;.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>2016.3</td>
+<td>Array.prototype.includes, &#xC9C0;&#xC218;&#xC5F0;&#xC0B0;(**) &#xC2A4;&#xD399;&#xC744; &#xCD94;&#xAC00;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>2017.6</td>
+<td>Async Await&#xBC0F; Object.entries, String.padStart, String.padEnd &#xCD94;&#xAC00;</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>3&#xD310; &#xCD9C;&#xC2DC; &#xC774;&#xD6C4; 5&#xD310; &#xCD9C;&#xC2DC;&#xAE4C;&#xC9C0; 10&#xB144;&#xC774; &#xAC78;&#xB838;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8; &#xD6C4; 6&#xD310;&#xAE4C;&#xC9C0; &#xB2E4;&#xC2DC; 7&#xB144;&#xC774;&#xB77C;&#xB294; &#xC2DC;&#xAC04;&#xC774; &#xC9C0;&#xB098;&#xB294; &#xBC14;&#xB78C;&#xC5D0; 6&#xD310;&#xC774; &#xCD9C;&#xC2DC;&#xB420;&#xB54C;&#xC5D0;&#xB294; &#xB9CE;&#xC740; &#xBCC0;&#xD654;&#xAC00; &#xC788;&#xC5C8;&#xB294;&#xB370;&#xC694;. &#xC55E;&#xC73C;&#xB85C; ECMA&#xCE21;&#xC740; &#xB9E4;&#xB144; &#xC0C8;&#xB85C;&#xC6B4; &#xD45C;&#xC900;&#xC744; &#xC815;&#xC758; &#xD558;&#xBA70; &#xB450;&#xBC88; &#xB2E4;&#xC2DC; 6&#xD310;&#xCC98;&#xB7FC; &#xB9CE;&#xC740; &#xBCC0;&#xD654;&#xAC00; &#xC77C;&#xC5B4;&#xB0A0; &#xC77C;&#xC740; &#xC5C6;&#xC744;&#xAC70;&#xB77C;&#xACE0; &#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;. 
+&#xCD9C;&#xCC98; - <a href="https://imcts.github.io/ES6-LET-CONST-TDZ/" target="_blank">Doren Front-end developer</a></p>
+</blockquote>
+<hr>
+<h2 id="let-const">let, const</h2>
+<p>let, const&#xB294; es6    &#xBD80;&#xD130; &#xC0DD;&#xAE34; &#xC0C8;&#xB85C;&#xC6B4; &#xC120;&#xC5B8;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> a = <span class="hljs-number">10</span>; <span class="hljs-comment">// &#xBCC0;&#xC218; &#xC120;&#xC5B8;</span>
+<span class="hljs-keyword">const</span> a = <span class="hljs-number">20</span>; <span class="hljs-comment">// &#xC0C1;&#xC218; &#xC120;&#xC5B8;</span>
+</code></pre>
+<p><code>var</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB358; &#xBC29;&#xC2DD;&#xACFC; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; &#xC0AC;&#xC6A9;&#xC744; &#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7FC; es6&#xBD80;&#xD130; &#xCD94;&#xAC00;&#xB41C; <code>let</code>&#xACFC; <code>const</code>&#xB294; &#xC5B4;&#xB5A4; &#xC810;&#xC774; <code>var</code>&#xB791; &#xB2E4;&#xB97C;&#xAE4C;&#xC694;? </p>
+<hr>
+<h2 id="hoisting">hoisting</h2>
+<p>&#xB450; &#xC120;&#xC5B8;&#xC2DD; &#xAC04;&#xC758; &#xCC28;&#xC774;&#xB97C; &#xC774;&#xD574;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC120; es6 &#xC774;&#xC804;&#xC5D0; &#xC788;&#xC5C8;&#xB358; var&#xC640; &#xD568;&#xC218; &#xD45C;&#xD604;&#xC2DD;&#xC758; hoisting&#xC5D0; &#xB300;&#xD574; &#xC774;&#xD574;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#xBCC0;&#xC218;&#xC758; hoisting</span>
+
+<span class="hljs-built_in">console</span>.log(msg); <span class="hljs-comment">// undefined</span>
+<span class="hljs-keyword">var</span> msg = <span class="hljs-string">&apos;hello var&apos;</span>;
+</code></pre>
+<hr>
+<p>&#xC704;&#xC758; &#xC608;&#xC81C;&#xC5D0;&#xC11C; &#xC5B4;&#xB5A4; &#xAC78; &#xB290;&#xB07C;&#xC168;&#xB098;&#xC694;? &#xC704;&#xD654;&#xAC10;&#xC744; &#xBABB; &#xB290;&#xB07C;&#xC168;&#xB2E4;&#xBA74;, &#xB2F9;&#xC2E0;&#xC740; &#xC774;&#xBBF8; js&#xAC1C;&#xBC1C;&#xC790;&#xC774;&#xAC70;&#xB098; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC5D0; &#xB300;&#xD55C; &#xC774;&#xD574;&#xAC00; &#xC5C6;&#xB294; &#xCD08;&#xBCF4; &#xAC1C;&#xBC1C;&#xC790;&#xC77C; &#xAC81;&#xB2C8;&#xB2E4;.
+&#xC704; &#xCF54;&#xB4DC;&#xB97C; &#xBCF4;&#xBA74; msg&#xAC00; &#xC120;&#xC5B8;&#xB3C4; &#xB418;&#xAE30; &#xC804;&#xC5D0; msg&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC774;&#xC5D0; &#xB300;&#xD55C; &#xC608;&#xC0C1;&#xACB0;&#xACFC;&#xB294; &#xC0AC;&#xC2E4; <code>undefined</code>&#xAC00; &#xC544;&#xB2CC; <code>ReferenceError</code> &#xC785;&#xB2C8;&#xB2E4;. </p>
+<p><strong>&#xC120;&#xC5B8;&#xB418;&#xC9C0;&#xB3C4; &#xC54A;&#xC740; &#xBCC0;&#xC218;&#xB97C; &#xCC3E;&#xACE0; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC774;&#xC8E0;.</strong></p>
+<hr>
+<h2 id="function-hoisting">Function Hoisting</h2>
+<pre><code class="lang-js">func(); <span class="hljs-comment">// hello</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>);
+}
+</code></pre>
+<p>&#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C; &#xC120;&#xC5B8;&#xB41C; &#xC801;&#xB3C4; &#xC5C6;&#xB294; &#xD568;&#xC218;&#xAC00; &#xC2E4;&#xD589;&#xC774; &#xB418;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC544;&#xB798;&#xC5D0; &#xC120;&#xC5B8;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xD568;&#xC218;&#xB97C; &#xB04C;&#xC5B4;&#xC11C; &#xC2E4;&#xD589;&#xD558;&#xB2E4;&#xB294; &#xAC74; &#xC54C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;&#xB9CC; &#xC5B4;&#xB5A4; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9C0;&#xB294;&#xAC78;&#xAE4C;&#xC694;? </p>
+<p>&#xADF8;&#xAC83;&#xC740; <code>javascript</code>&#xC758; <code>Execution Context</code> &#xC989; <code>&#xC2E4;&#xD589;&#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;</code>&#xC640; &#xAD00;&#xB828;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<h2 id="execution-context">Execution Context</h2>
+<p><code>Execution Context</code>(&#xC904;&#xC5EC;&#xC11C; <code>ec</code>)&#xB780;, javascript&#xC758; &#xAC01;&#xC885; &#xB3D9;&#xC791;&#xC5D0; &#xB300;&#xD55C; &#xC6D0;&#xB9AC;&#xB97C; &#xB2F4;&#xACE0; &#xC788;&#xB294; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xD575;&#xC2EC;&#xC6D0;&#xB9AC;&#xC785;&#xB2C8;&#xB2E4;. &#xB3D9;&#xC2DC;&#xC5D0; &#xC218;&#xB9CE;&#xC740; js &#xC785;&#xBB38;&#xC790;&#xB4E4;&#xC744; &#xCD08;&#xAE09; &#xAC1C;&#xBC1C;&#xC790;&#xC5D0; &#xBA38;&#xBB3C;&#xAC8C; &#xD558;&#xB294; &#xC8FC; &#xBC94;&#xC778;&#xC774;&#xC8E0;.</p>
+<p>&#xB2E4;&#xC74C; &#xB9C1;&#xD06C;&#xC5D0; &#xAD00;&#xB828; &#xAC1C;&#xB150;&#xC5D0; &#xB300;&#xD574; &#xC798; &#xC124;&#xBA85;&#xD574; &#xB193;&#xC558;&#xC73C;&#xB2C8; &#xC77C;&#xB2E8;&#xC740; &#xB9C1;&#xD06C;&#xB97C; &#xCC38;&#xC870;&#xD569;&#xC2DC;&#xB2E4;. 
+<a href="https://poiemaweb.com/js-execution-context" target="_blank">PoeimaWeb - &#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xC640; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xB3D9;&#xC791; &#xC6D0;&#xB9AC;
+</a></p>
+<hr>
+<p>&#xD568;&#xC218;&#xC120;&#xC5B8; &gt; &#xBCC0;&#xC218;&#xC120;&#xC5B8; &gt;&gt;&gt;&gt;&gt; &#xD560;&#xB2F9; == &#xC2E4;&#xD589;</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func</span>(<span class="hljs-params"></span>)</span>{}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>code no.</th>
+<th>&#xD568;&#xC218;&#xC120;&#xC5B8;</th>
+<th>&#xBCC0;&#xC218;&#xC120;&#xC5B8;</th>
+<th>&#xD560;&#xB2F9;</th>
+<th>&#xC2E4;&#xD589;</th>
+<th>&#xACB0;&#xACFC;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>a()</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>2</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>console.log(b)</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>3</td>
+<td>-</td>
+<td>var b</td>
+<td>10</td>
+<td>-</td>
+<td>b = 10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>console.log(b)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>5</td>
+<td>function a</td>
+</tr>
+<tr>
+<td>6</td>
+<td>-</td>
+<td>var c</td>
+<td>20</td>
+<td>-</td>
+<td>c = 20</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="example-code">example code</h2>
+<pre><code class="lang-js">a(); 
+<span class="hljs-built_in">console</span>.log(b);
+<span class="hljs-keyword">var</span> b = <span class="hljs-number">10</span>;
+<span class="hljs-built_in">console</span>.log(b);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;im a&apos;</span>);
+}
+<span class="hljs-keyword">var</span> c = <span class="hljs-number">20</span>;
+</code></pre>
+<hr>
+<h2 id="tdz">TDZ</h2>
+<p>&#xB2E4;&#xC2DC; &#xB3CC;&#xC544;&#xC640;&#xC11C;, <code>let</code>&#xACFC; <code>const</code>&#xB294; hoisting&#xC774; &#xC77C;&#xC5B4;&#xB098;&#xC9C0; &#xC54A;&#xAC8C; &#xD558;&#xB294; &#xC120;&#xC5B8;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;. <code>let</code>&#xC740; &#xBCC0;&#xC218;&#xC758; &#xC120;&#xC5B8;&#xC744;, <code>const</code>&#xB294; &#xC0C1;&#xC218;&#xC758; &#xC120;&#xC5B8;&#xC744; &#xC758;&#xBBF8;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// ReferenceError</span>
+<span class="hljs-keyword">let</span> a = <span class="hljs-number">10</span>;
+</code></pre>
+<p><code>TDZ</code>&#xB780;, temporary dead zone&#xC73C;&#xB85C;&#xC11C; &#xAE30;&#xC874;&#xC758; hoisting&#xC774; &#xC77C;&#xC5B4;&#xB098;&#xC9C0; &#xC54A;&#xAC8C; &#xB418;&#xC5C8;&#xAE30;&#xC5D0; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;. &#xC704;&#xC758; &#xC2DD;&#xC5D0;&#xC11C; <code>a</code>&#xBCC0;&#xC218;&#xB294; &#xC120;&#xC5B8;&#xB418;&#xAE30; &#xC804;&#xC5D0; &#xD638;&#xCD9C;&#xB418;&#xC5C8;&#xAE30;&#xC5D0; <code>ReferenceError</code>&#xB97C; &#xBC1C;&#xC0DD;&#xC2DC;&#xD0B5;&#xB2C8;&#xB2E4;. </p>
+<hr>
+<h2 id="tdz&#xC640;-typeof">TDZ&#xC640; typeof</h2>
+<p>&#xB300;&#xAC1C; es6 &#xBBF8;&#xB9CC;&#xC5D0;&#xC11C; <code>typeof()</code>&#xB97C; &#xC5B8;&#xAE09;&#xD560; &#xB54C;, safe zone&#xC774;&#xB77C;&#xB294; &#xC598;&#xAE30;&#xB97C; &#xD569;&#xB2C8;&#xB2E4;. &#xC5B4;&#xB5A0;&#xD55C; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; &#xC5D0;&#xB7EC;&#xB97C; &#xB744;&#xC6B0;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC774;&#xC8E0;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">typeof</span>(undeclaredValue); <span class="hljs-comment">// undefined</span>
+</code></pre>
+<p><br></p>
+<p>&#xADF8;&#xB7EC;&#xB098; &#xADF8; &#xC5B4;&#xB5A4; &#xAC12;&#xC774; &#xB4E4;&#xC5B4;&#xC640;&#xB3C4; &#xC5D0;&#xB7EC;&#xB97C; &#xB744;&#xC6B0;&#xC9C0; &#xC54A;&#xB294; typeof &#xC870;&#xCC28; tdz&#xC5D0;&#xC120; error&#xB97C; &#xB744;&#xC6B0;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC870;&#xC2EC;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">typeof</span>(declaredValue); <span class="hljs-comment">// ReferrenceError</span>
+<span class="hljs-keyword">let</span> declaredValue = <span class="hljs-number">10</span>;
+</code></pre>
+<hr>
+<h2 id="&#xC911;&#xBCF5;&#xC120;&#xC5B8;&#xAE08;&#xC9C0;">&#xC911;&#xBCF5;&#xC120;&#xC5B8;&#xAE08;&#xC9C0;</h2>
+<p>&#xD504;&#xB85C;&#xADF8;&#xB798;&#xBA38;&#xB97C; &#xD63C;&#xB780;&#xC2DC;&#xCF30;&#xB358; &#xAE30;&#xC874; <code>var</code>&#xAC00; &#xAC00;&#xC84C;&#xB358; &#xD2B9;&#xC9D5; &#xC911;&#xC5D0; &#xD558;&#xB098;&#xB294; &#xC911;&#xBCF5; &#xC120;&#xC5B8;&#xC785;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xBA74; &#xC774;&#xB7F0;&#xAC8C; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> a = <span class="hljs-number">20</span>;
+<span class="hljs-built_in">console</span>.log(a) <span class="hljs-comment">// 20</span>
+</code></pre>
+<p>&#xD558;&#xC9C0;&#xB9CC; <code>let</code>, <code>const</code>&#xB294; &#xC624;&#xC9C1; &#xD558;&#xB098;&#xC758; &#xBCC0;&#xC218;&#xB9CC; &#xD560;&#xB2F9;&#xAC00;&#xB2A5; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code>//es6
+let a = 10;
+let a = 20; // SyntaxError
+console.log(a)
+</code></pre><hr>
+<h2 id="block-level-scope">block-level-scope</h2>
+<p>&#xAE30;&#xC874; <code>es5</code> &#xC774;&#xC804;&#xAE4C;&#xC9C0;&#xC758; &#xBB38;&#xBC95;&#xC5D0;&#xC120; <code>function level scope</code> &#xC774;&#xC678;&#xC5D0; &#xB2E4;&#xB978; <code>scope</code>&#xAC00; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+}
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 10</span>
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++);
+<span class="hljs-built_in">console</span>.log(i); <span class="hljs-comment">// 10</span>
+</code></pre>
+<hr>
+<p>&#xD558;&#xC9C0;&#xB9CC; es6&#xC5D0;&#xC120; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xCC98;&#xB9AC;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span>(<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">let</span> a = <span class="hljs-number">10</span>;
+}
+<span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// ReferenceError</span>
+
+<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++);
+<span class="hljs-built_in">console</span>.log(i); <span class="hljs-comment">// ReferenceError</span>
+</code></pre>
+<p><br></p>
+<blockquote>
+<p><code>es6</code> &#xBBF8;&#xB9CC;&#xC758; &#xBC84;&#xC804;&#xC744; <code>es6</code> &#xC774;&#xC0C1;&#xC73C;&#xB85C; &#xC804;&#xD658; &#xC2DC;, &#xB2E8;&#xC21C;&#xD788; <code>var</code>&#xB97C; <code>let</code>&#xC73C;&#xB85C; &#xBC14;&#xAFB8;&#xB294; &#xACBD;&#xC6B0;&#xAC00; &#xC788;&#xB294;&#xB370;, &#xB300;&#xAC1C; &#xC800;&#xB7F0; <code>block scope</code>&#xB97C; &#xC9C0;&#xD0A4;&#xC9C0; &#xC54A;&#xACE0; &#xC791;&#xC131;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xB294; &#xACBD;&#xC6B0;&#xAC00; &#xB9CE;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC5D0;&#xB7EC;&#xAC00; &#xC5C4;&#xCCAD;&#xB098;&#xAC8C; &#xC3DF;&#xC544;&#xC9C0;&#xACE4; &#xD569;&#xB2C8;&#xB2E4;..</p>
+</blockquote>
+<hr>
+<h2 id="let-const&#xC640;-var">let, const&#xC640; var</h2>
+<p>&#xADF8;&#xB807;&#xB2E4;&#xBA74; <code>var</code>&#xB294; &#xB354; &#xC774;&#xC0C1; &#xC4F8;&#xBAA8;&#xAC00; &#xC5C6;&#xB294;&#xAC78;&#xAE4C;&#xC694;?
+&#xD639;&#xC740; &#xB2E4;&#xAC19;&#xC774; &#xC368;&#xB3C4; &#xB418;&#xB294;&#xAC78;&#xAE4C;&#xC694;?</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#xBAA8;&#xB450; &#xC0AC;&#xC774;&#xC88B;&#xAC8C;?</span>
+<span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">let</span> b = <span class="hljs-number">20</span>;
+<span class="hljs-keyword">const</span> c = <span class="hljs-number">30</span>;
+</code></pre>
+<hr>
+<p>&#xC544;&#xC27D;&#xAC8C;&#xB3C4; <code>var</code>&#xC758; &#xC2DC;&#xB300;&#xB294; &#xC5EC;&#xAE30;&#xAE4C;&#xC9C0;&#xC778; &#xB4EF; &#xD569;&#xB2C8;&#xB2E4;.
+<code>es6</code> &#xC774;&#xC0C1;&#xC5D0;&#xC120; <code>var</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218;&#xB294; &#xC788;&#xC9C0;&#xB9CC;, <code>var</code>&#xC758; &#xC0AC;&#xC6A9;&#xC774; &#xC9C0;&#xC591;&#xB429;&#xB2C8;&#xB2E4;. &#xC55E;&#xC73C;&#xB85C;&#xB294; <code>let</code>&#xACFC; <code>const</code>&#xB97C; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xC9C0;&#xD5A5;&#xD569;&#xC2DC;&#xB2E4;. </p>
+<h4 id="es5-&#xBBF8;&#xB9CC;&#xC744;-&#xC4F0;&#xB294;-&#xACBD;&#xC6B0;&#xC5D0;&#xB3C4;-block-scope&#xB97C;-&#xC9C0;&#xD0AC;-&#xC218;-&#xC788;&#xB3C4;&#xB85D;-&#xB178;&#xB825;&#xD558;&#xB294;-&#xAC83;&#xB3C4;-&#xAD1C;&#xCC2E;&#xC544;&#xC694;">es5 &#xBBF8;&#xB9CC;&#xC744; &#xC4F0;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; block scope&#xB97C; &#xC9C0;&#xD0AC; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xB178;&#xB825;&#xD558;&#xB294; &#xAC83;&#xB3C4; &#xAD1C;&#xCC2E;&#xC544;&#xC694;.</h4>
+<hr>
+<h2 id="let-const&#xC758;-&#xC0AC;&#xC6A9;&#xBC95;">let, const&#xC758; &#xC0AC;&#xC6A9;&#xBC95;</h2>
+<p><code>let</code>&#xACFC; <code>const</code>&#xB294; &#xC55E;&#xC5D0;&#xC11C; &#xC5B8;&#xAE09;&#xD588;&#xB358; &#xAC83;&#xCC98;&#xB7FC; &#xBCC0;&#xC218;&#xC640; &#xC0C1;&#xC218;&#xB77C;&#xACE0; &#xC0DD;&#xAC01;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js">
+<span class="hljs-comment">// &#xC120;&#xC5B8;</span>
+<span class="hljs-keyword">let</span> value;
+
+<span class="hljs-comment">// &#xD560;&#xB2F9;</span>
+value = <span class="hljs-string">&apos;variable&apos;</span>;
+
+<span class="hljs-comment">// &#xC7AC;&#xD560;&#xB2F9;</span>
+value = <span class="hljs-string">&apos;variable2&apos;</span>;
+
+<span class="hljs-comment">// &#xC120;&#xC5B8; &#xBC0F; &#xD560;&#xB2F9;</span>
+<span class="hljs-keyword">const</span> finalValue = <span class="hljs-string">&apos;finalValue&apos;</span>;
+
+<span class="hljs-comment">// &#xC120;&#xC5B8;</span>
+<span class="hljs-keyword">const</span> finalValue1; <span class="hljs-comment">// Uncaught SyntaxError</span>
+</code></pre>
+<p><img src="../../assets/ogu_end.gif" alt="bg"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.callback.html" class="navigation navigation-prev " aria-label="Previous page: callback">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.template_literal.html" class="navigation navigation-next " aria-label="Next page: template literal">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"let, const, var","level":"2.1.2","depth":2,"next":{"title":"template literal","level":"2.1.3","depth":2,"path":"docs/es6/3.template_literal.md","ref":"./docs/es6/3.template_literal.md","articles":[]},"previous":{"title":"callback","level":"2.1.1","depth":2,"path":"docs/es6/1.callback.md","ref":"./docs/es6/1.callback.md","articles":[]},"dir":"ltr"},"config":{"plugins":["etoc","splitter","expandable-chapters-small","toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daily JSJSTIME","gitbook":"*"},"file":{"path":"docs/es6/2.let_const_var.md","mtime":"2019-09-18T00:38:32.072Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-18T00:42:26.262Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-etoc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,581 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>multiple return value · Daily JSJSTIME</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-etoc/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.for_of_iterable.html" />
+    
+    
+    <link rel="prev" href="4.arrow_function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Home
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JSJSTIME</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    es6
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="1.callback.html">
+            
+                <a href="1.callback.html">
+            
+                    
+                    callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="2.let_const_var.html">
+            
+                <a href="2.let_const_var.html">
+            
+                    
+                    let, const, var
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="3.template_literal.html">
+            
+                <a href="3.template_literal.html">
+            
+                    
+                    template literal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="4.arrow_function.html">
+            
+                <a href="4.arrow_function.html">
+            
+                    
+                    arrow function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.5" data-path="5.multiple_return_value.html">
+            
+                <a href="5.multiple_return_value.html">
+            
+                    
+                    multiple return value
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="6.for_of_iterable.html">
+            
+                <a href="6.for_of_iterable.html">
+            
+                    
+                    for of iterable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2019년</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../201909/">
+            
+                <a href="../201909/">
+            
+                    
+                    9월
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../201909/17/20190917_je.html">
+            
+                <a href="../201909/17/20190917_je.html">
+            
+                    
+                    자바스크립트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../201909/17/20190917_sh.html">
+            
+                <a href="../201909/17/20190917_sh.html">
+            
+                    
+                    객체지향
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >multiple return value</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!-- page_number: true -->
+<h1 id="js-js-time">JS JS TIME</h1>
+<h5 id="chapter-5-multiple-return-value">chapter 5. Multiple Return Value</h5>
+<hr>
+<h2 id="array">Array</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// es5</span>
+<span class="hljs-keyword">var</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>];
+<span class="hljs-keyword">var</span> num1 = arr[<span class="hljs-number">1</span>]; <span class="hljs-comment">// 1</span>
+<span class="hljs-keyword">var</span> num2 = arr[<span class="hljs-number">2</span>]; <span class="hljs-comment">// 2</span>
+<span class="hljs-keyword">var</span> num3 = arr[<span class="hljs-number">3</span>]; <span class="hljs-comment">// 3</span>
+
+<span class="hljs-comment">// es6</span>
+<span class="hljs-keyword">const</span> arr = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>];
+<span class="hljs-keyword">const</span> [num1, num2, num3] = arr;
+<span class="hljs-keyword">const</span> [num1, ,num3] = arr;
+</code></pre>
+<hr>
+<h2 id="object">Object</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// es5</span>
+<span class="hljs-keyword">var</span> obj = { a: <span class="hljs-number">1</span>, b:<span class="hljs-number">2</span>, c:<span class="hljs-number">3</span>}
+<span class="hljs-keyword">var</span> a = obj.a;
+<span class="hljs-keyword">var</span> b = obj.b;
+<span class="hljs-keyword">var</span> c = obj.c;
+
+<span class="hljs-comment">// es6</span>
+<span class="hljs-keyword">const</span> obj = { a: <span class="hljs-number">1</span>, b: <span class="hljs-number">2</span>, c: <span class="hljs-number">3</span> };
+<span class="hljs-keyword">const</span> {a, b, c} = obj;
+<span class="hljs-keyword">const</span> {b, c, a} = obj;
+
+<span class="hljs-keyword">const</span> {aa, bb, cc} = obj; <span class="hljs-comment">// undefined</span>
+<span class="hljs-keyword">const</span> {a:aa, b:bb, c:cc} = obj;
+<span class="hljs-comment">//aa:1, bb:2, cc:3</span>
+</code></pre>
+<hr>
+<h2 id="quiz">Quiz</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> obj = {a:<span class="hljs-number">1</span>, b:<span class="hljs-number">2</span>, c:<span class="hljs-number">3</span>}
+<span class="hljs-keyword">const</span> {aa, bb, cc} = obj;
+<span class="hljs-built_in">console</span>.log(bb); <span class="hljs-comment">// ?</span>
+</code></pre>
+<hr>
+<h2 id="example">example</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> returnData = {
+  header: <span class="hljs-string">&apos;asdf&apos;</span>,
+  auth: <span class="hljs-string">&apos;asdfdsfas&apos;</span>,
+  msg: <span class="hljs-string">&apos;asdf&apos;</span>
+}
+
+<span class="hljs-keyword">const</span> func = (header, msg) =&gt; {}
+func(returnData.header, returnData.msg)
+
+<span class="hljs-keyword">const</span> func2 = (returnData) =&gt; {
+  <span class="hljs-keyword">const</span> {header, msg} = returnData;
+  <span class="hljs-comment">// code</span>
+}
+
+<span class="hljs-keyword">const</span> func3 = ({header, msg}) =&gt; {
+}
+</code></pre>
+<hr>
+<h2 id="&#xB2E4;&#xCC28;&#xC6D0;-&#xBC30;&#xC5F4;-&#xD560;&#xB2F9;">&#xB2E4;&#xCC28;&#xC6D0; &#xBC30;&#xC5F4; &#xD560;&#xB2F9;</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> arr = [
+  [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],
+  [[<span class="hljs-number">4</span>,<span class="hljs-number">5</span>],<span class="hljs-number">6</span>,<span class="hljs-number">7</span>]
+];
+
+<span class="hljs-keyword">const</span> [
+  [a,b,c],
+  [[d,e],f,g]
+] = arr;
+
+<span class="hljs-built_in">console</span>.log(a,b,c,d,e,f,g) <span class="hljs-comment">// 1,2,3,4,5,6,7</span>
+</code></pre>
+<hr>
+<h2 id="&#xAC1D;&#xCCB4;-&#xBC1C;&#xCDCC;-&#xD560;&#xB2F9;">&#xAC1D;&#xCCB4; &#xBC1C;&#xCDCC; &#xD560;&#xB2F9;</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> data = {
+  a:<span class="hljs-number">1</span>, b:<span class="hljs-number">2</span>, c:<span class="hljs-number">3</span>
+};
+
+<span class="hljs-keyword">const</span> {a, c} = data;
+</code></pre>
+<hr>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> state = {
+  user: {
+    name: <span class="hljs-string">&apos;asdf&apos;</span>,
+    phone: <span class="hljs-string">&apos;123123123123&apos;</span>,
+    age: <span class="hljs-number">123</span>,
+    etc: {
+      home: <span class="hljs-string">&apos;seohyun&apos;</span>,
+      company: <span class="hljs-string">&apos;kakakak&apos;</span>
+    }
+  },
+  snack: [
+    <span class="hljs-string">&apos;&#xD5C8;&#xB2C8;&#xBC84;&#xD130;&#xCE69;&apos;</span>,
+    <span class="hljs-string">&apos;&#xC790;&#xAC08;&#xCE58;&apos;</span>,
+    <span class="hljs-string">&apos;&#xC0C8;&#xC6B0;&#xAE61;&apos;</span>
+  ]
+};
+
+<span class="hljs-keyword">const</span> {
+ user: {
+    name,
+    phone,
+    age,
+    etc : {
+      home,
+      company
+    }
+ },
+ snack
+} = state;
+
+
+(state.user) =&gt; ({name, phone, age, etc:{home, company}) =&gt; {
+
+}
+</code></pre>
+<hr>
+<h2 id="&#xBCC0;&#xC218;&#xC758;-&#xAC12;-&#xBC14;&#xAFB8;&#xAE30;">&#xBCC0;&#xC218;&#xC758; &#xAC12; &#xBC14;&#xAFB8;&#xAE30;</h2>
+<pre><code class="lang-js">
+<span class="hljs-keyword">let</span> a = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">let</span> b = <span class="hljs-number">2</span>;
+
+<span class="hljs-comment">//swap</span>
+<span class="hljs-keyword">let</span> temp = a;
+a = b;
+b = temp;
+
+<span class="hljs-comment">// new solution</span>
+[a,b] = [b,a];
+</code></pre>
+<hr>
+<h2 id="&#xBC88;&#xC678;&#xD3B8;">&#xBC88;&#xC678;&#xD3B8;</h2>
+<pre><code class="lang-js"><span class="hljs-comment">// constants.js</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-string">&apos;DATE&apos;</span> : <span class="hljs-string">&apos;${year}&#xB144; ${month}&#xC6D4; ${day}&#xC77C;&apos;</span>,
+  <span class="hljs-string">&apos;TITLE&apos;</span> : <span class="hljs-string">&apos;&#xC548;&#xB155;&apos;</span>
+}
+
+
+<span class="hljs-comment">// intl.js</span>
+<span class="hljs-keyword">const</span> replaceRegex = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&apos;\\$\\{([\\w|\\.]+)\\}&apos;</span>, <span class="hljs-string">&apos;g&apos;</span>);
+
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__</span>(<span class="hljs-params">text, context</span>) </span>{
+  <span class="hljs-keyword">const</span> convertedText = CONSTANTS[text];
+  <span class="hljs-keyword">if</span>(!context){
+    <span class="hljs-keyword">return</span> convertedText;
+  }
+
+  <span class="hljs-keyword">let</span> copiedText = convertedText;
+  <span class="hljs-keyword">while</span>((result = replaceRegex.exec(convertedText))) {
+    <span class="hljs-keyword">const</span> [org, key] = result;
+    copiedText = copiedText.replace(org, context[key]);
+  }
+
+  <span class="hljs-keyword">return</span> copiedText;
+}
+
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">var</span> data = {
+  date: __(<span class="hljs-string">&apos;DATE&apos;</span>, {year:<span class="hljs-number">2019</span>, month:<span class="hljs-number">1</span>, day:<span class="hljs-number">29</span>}),
+  title: __(<span class="hljs-string">&apos;TITLE&apos;</span>)
+}
+</code></pre>
+<p><img src="../../assets/ogu_end.gif" alt="bg"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.arrow_function.html" class="navigation navigation-prev " aria-label="Previous page: arrow function">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.for_of_iterable.html" class="navigation navigation-next " aria-label="Next page: for of iterable">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"multiple return value","level":"2.1.5","depth":2,"next":{"title":"for of iterable","level":"2.1.6","depth":2,"path":"docs/es6/6.for_of_iterable.md","ref":"./docs/es6/6.for_of_iterable.md","articles":[]},"previous":{"title":"arrow function","level":"2.1.4","depth":2,"path":"docs/es6/4.arrow_function.md","ref":"./docs/es6/4.arrow_function.md","articles":[]},"dir":"ltr"},"config":{"plugins":["etoc","splitter","expandable-chapters-small","toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daily JSJSTIME","gitbook":"*"},"file":{"path":"docs/es6/5.multiple_return_value.md","mtime":"2019-09-18T00:39:09.280Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-18T00:42:26.262Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-etoc/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
