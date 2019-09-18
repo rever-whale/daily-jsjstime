@@ -17,4 +17,5 @@
 
 * [9월](./docs/201909/index.md)
   * [자바스크립트](./docs/201909/17/20190917_je.md)
-  * [객체지향](./docs/201909/17/20190917_sh.md)
+  * [오브젝트, 자바스크립트화](./docs/object_js/index.md)
+    1. [티켓 판매 애플리케이션](./docs/object_js/1.theater.md)
