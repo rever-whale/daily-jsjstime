@@ -19,3 +19,6 @@
   * [클로져](./docs/201909/18/20190918_je.md)
   * [오브젝트, 자바스크립트화](./docs/object_js/index.md)
     1. [티켓 판매 애플리케이션](./docs/object_js/1.theater.md)
+
+* [10월](./docs/201910/index.md)
+  * [지으니 면접 준비](./docs/201910/23/20191023_je.md)
