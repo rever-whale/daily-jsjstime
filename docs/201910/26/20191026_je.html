@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>클로져 · Daily JSJSTIME</title>
+        <title>자바스크립트 디자인 패턴 · Daily JSJSTIME</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../object_js/" />
+    <link rel="next" href="../31/20191031_je.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="../23/20191023_je.html" />
     
 
     </head>
@@ -229,9 +229,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../">
+        <li class="chapter " data-level="3.1" data-path="../../201909/">
             
-                <a href="../">
+                <a href="../../201909/">
             
                     
                     9월
@@ -243,9 +243,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="3.1.1" data-path="20190918_je.html">
+        <li class="chapter " data-level="3.1.1" data-path="../../201909/18/20190918_je.html">
             
-                <a href="20190918_je.html">
+                <a href="../../201909/18/20190918_je.html">
             
                     
                     클로져
@@ -288,9 +288,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3" data-path="../javascript_engine.html">
+        <li class="chapter " data-level="3.1.3" data-path="../../201909/javascript_engine.html">
             
-                <a href="../javascript_engine.html">
+                <a href="../../201909/javascript_engine.html">
             
                     
                     자바스크립트 기본
@@ -306,9 +306,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../../201910/">
+        <li class="chapter " data-level="3.2" data-path="../">
             
-                <a href="../../201910/">
+                <a href="../">
             
                     
                     10월
@@ -320,9 +320,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.2.1" data-path="../../201910/23/20191023_je.html">
+        <li class="chapter " data-level="3.2.1" data-path="../23/20191023_je.html">
             
-                <a href="../../201910/23/20191023_je.html">
+                <a href="../23/20191023_je.html">
             
                     
                     지으니 면접 준비 part1
@@ -333,9 +333,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.2" data-path="../../201910/26/20191026_je.html">
+        <li class="chapter active" data-level="3.2.2" data-path="20191026_je.html">
             
-                <a href="../../201910/26/20191026_je.html">
+                <a href="20191026_je.html">
             
                     
                     자바스크립트 디자인 패턴
@@ -346,9 +346,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.3" data-path="../../201910/31/20191031_je.html">
+        <li class="chapter " data-level="3.2.3" data-path="../31/20191031_je.html">
             
-                <a href="../../201910/31/20191031_je.html">
+                <a href="../31/20191031_je.html">
             
                     
                     지으니 면접 준비 part2
@@ -439,7 +439,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >클로져</a>
+        <a href="../../.." >자바스크립트 디자인 패턴</a>
     </h1>
 </div>
 
@@ -454,50 +454,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#xD074;&#xB85C;&#xC800;">&#xD074;&#xB85C;&#xC800;</h1>
-<p>&#xD074;&#xB85C;&#xC800;&#xB97C; &#xC54C;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xB97C; &#xBA3C;&#xC800; &#xC54C;&#xC544;&#xC57C;&#xD55C;&#xB2E4;. 
-for() {}, if() {} &#xC640; &#xAC19;&#xC740; &#xAD6C;&#xBB38;&#xC740; &#xC720;&#xD6A8; &#xBC94;&#xC704;&#xAC00; &#xC5C6;&#xB2E4;. 
-&#xC624;&#xC9C1; &#xD568;&#xC218;&#xB9CC;&#xC774; &#xC720;&#xD6A8;&#xBC94;&#xC704;&#xAC00; &#xC788;&#xACE0; &#xC774; &#xC720;&#xD6A8;&#xBC94;&#xC704;&#xB97C; &#xC2A4;&#xCF54;&#xD504;&#xB77C;&#xD558;&#xBA70; &#xC774; &#xC2A4;&#xCF54;&#xD504;&#xB294; &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB85C; &#xAC01; &#xD568;&#xC218;&#xC758; &#xC5F0;&#xACB0;&#xB41C; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C; &#xAD00;&#xB9AC;&#xB41C;&#xB2E4;.</p>
-<p>&#xD568;&#xC218;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xBA74; &#xC804;&#xC5ED; &#xC2E4;&#xD589; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xAC00; &#xC0DD;&#xC131;&#xB418;&#xACE0; &#xD568;&#xC218;&#xC758; &#xAC1D;&#xCCB4;&#xAC00; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9C4;&#xB2E4;. 
-&#xC774; &#xD568;&#xC218; &#xAC1D;&#xCCB4;&#xB294; &#xD604;&#xC7AC; &#xC2E4;&#xD589;&#xB418;&#xB294; &#xCEE8;&#xD14D;&#xC2A4;&#xD2B8;&#xC758; &#xC2A4;&#xCF54;&#xD504;&#xB97C; &#xAC00;&#xC9C4;&#xB2E4;.</p>
-<p>&#xADF8;&#xB9AC;&#xACE0; &#xC0DD;&#xBA85;&#xC8FC;&#xAE30;&#xAC00; &#xB05D;&#xB09C; &#xC678;&#xBD80; &#xD568;&#xC218;&#xC758; &#xC9C0;&#xC5ED;&#xBCC0;&#xC218;&#xC5D0; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xB294; &#xD568;&#xC218;&#xB97C; &#xD074;&#xB85C;&#xC800;&#xB77C; &#xD55C;&#xB2E4;.</p>
-<p>&#xD074;&#xB85C;&#xC800;&#xC758; &#xD65C;&#xC6A9;</p>
+                                <h2 id="&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;-&#xB514;&#xC790;&#xC778;-&#xD328;&#xD134;">&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xB514;&#xC790;&#xC778; &#xD328;&#xD134;</h2>
 <ul>
-<li>&#xD2B9;&#xC815;&#xD568;&#xC218;&#xC5D0; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC815;&#xC758;&#xD55C; &#xAC1D;&#xCCB4;&#xC758; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC5F0;&#xACB0;&#xD558;&#xAE30;</li>
-<li>&#xD568;&#xC218;&#xC758; &#xCEA1;&#xC290;&#xD654;</li>
+<li>&#xD504;&#xB85C;&#xD1A0;&#xD0C0;&#xC785;
+&#xC0C1;&#xC18D;&#xC740; <strong>proto</strong> &#xB97C; &#xAC16;&#xACE0; &#xC788;&#xB2E4;.
+Parent &#xD568;&#xC218;&#xC758; prototype &#xAC00; &#xC644;&#xC804;&#xD788; &#xC77C;&#xCE58;&#xD55C;&#xB2E4;.</li>
 </ul>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">10</span>
-b = <span class="hljs-number">15</span>
-<span class="hljs-built_in">console</span>.log(a) <span class="hljs-comment">// 10</span>
-<span class="hljs-built_in">console</span>.log(b) <span class="hljs-comment">// 15</span>
-
-<span class="hljs-built_in">console</span>.log(global.a) <span class="hljs-comment">// undefined</span>
-<span class="hljs-built_in">console</span>.log(global.b) <span class="hljs-comment">// 15</span>
-
-<span class="hljs-keyword">var</span> var1 = <span class="hljs-number">1</span>
-<span class="hljs-keyword">var</span> var2 = <span class="hljs-number">2</span>
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">func</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">var</span> var1 = <span class="hljs-number">10</span>
-  <span class="hljs-keyword">var</span> var2 = <span class="hljs-number">20</span> 
-  <span class="hljs-built_in">console</span>.log(var1) <span class="hljs-comment">// 10</span>
-  <span class="hljs-built_in">console</span>.log(var2) <span class="hljs-comment">// 20</span>
+<p>&#xD504;&#xB85C;&#xD1A0;&#xD0C0;&#xC785; &#xCCB4;&#xC778;&#xC744; &#xC5F0;&#xACB0;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xBC29;&#xBC95;&#xC744; &#xBCF4;&#xC790;.</p>
+<ol>
+<li>Object.creaet() &#xB85C; &#xAC15;&#xC81C;&#xB85C; &#xD504;&#xB85C;&#xD1A0;&#xD0C0;&#xC785;&#xC744; &#xC9C0;&#xC815;&#xD574;&#xC900;&#xB2E4;.</li>
+<li>constructor &#xC5D0; &#xC9C1;&#xC811; &#xBC14;&#xC778;&#xB529;&#xC744; &#xD574;&#xC918;&#xC57C;&#xD55C;&#xB2E4;.</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Parent</span>(<span class="hljs-params"></span>) </span>{
 }
-func()
-<span class="hljs-built_in">console</span>.log(var1) <span class="hljs-comment">// 1</span>
-<span class="hljs-built_in">console</span>.log(var2) <span class="hljs-comment">// 2</span>
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">countSeconds</span>(<span class="hljs-params">howMany</span>) </span>{
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>; i &lt; howMany; i++) {
-    (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">current</span>) </span>{
-    setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-      <span class="hljs-built_in">console</span>.log(current)
-      }, current * <span class="hljs-number">1000</span>)
-    }(i))
-  }
-}
-
-countSeconds(<span class="hljs-number">3</span>)
+<span class="hljs-keyword">var</span> cls = <span class="hljs-keyword">new</span> Parent()
+<span class="hljs-built_in">console</span>.dir(cls) <span class="hljs-comment">// Parent constructor: {name: Parent}</span>
 </code></pre>
+<blockquote>
+<p>&#xC0AC;&#xB78C;&#xB4E4;&#xC774; &#xC774;&#xD574;&#xD55C; &#xAC78; &#xBCF4;&#xC9C0;&#xB9D0;&#xACE0;, &#xC774;&#xD574; &#xB420; &#xB54C;&#xAE4C;&#xC9C0; &#xBCF4;&#xACE0; &#xC5B4;&#xB824;&#xC6B4;&#xAC78; &#xCC3E;&#xACE0; &#xCC3E;&#xACE0; &#xCC3E;&#xACE0; &#xB0B4;&#xAC00; &#xC544;&#xB294;&#xB370;&#xAE4C;&#xC9C0; &#xB9CC;&#xB098;&#xC57C;&#xD55C;&#xB2E4;. - s.ho</p>
+</blockquote>
+<ul>
+<li>&#xD329;&#xD1A0;&#xB9AC;
+&#xCD5C;&#xC885; &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xC5D0; &#xB300;&#xD574; &#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC900;&#xB2E4;. </li>
+</ul>
+<p>&#xC65C; &#xC4F0;&#xB294; &#xAC78;&#xAE4C;? &#xD329;&#xD1A0;&#xB9AC;&#xB780; &#xACF5;&#xC7A5;&#xC774;&#xACE0;, &#xADF8; &#xC548;&#xC5D0; &#xC815;&#xC758;&#xB41C; &#xAC83;&#xB9CC; &#xC4F0;&#xC790;&#xAC00; &#xBAA9;&#xC801;&#xC774;&#xB2E4;.
+&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xAC00; &#xAC19;&#xC740; &#xC5EC;&#xB7EC; &#xAC1C;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD560;&#xB54C;&#xB098; &#xD074;&#xB798;&#xC2A4;&#xB97C; &#xD6A8;&#xC728;&#xC801;&#xC73C;&#xB85C; &#xC4F8; &#xC218; &#xC788;&#xB294; &#xBC29;&#xBC95;&#xC774;&#xB2E4;.</p>
+<p>&#xBE44;&#xC2B7;&#xD55C; &#xBAA8;&#xB378;&#xC758; &#xD070; &#xBC94;&#xC8FC;&#xC758; &#xC0C1;&#xC18D;&#xBC1B;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xB97C; &#xBC18;&#xD658;&#xD558;&#xAE30; &#xC704;&#xD568;&#xC774;&#xB2E4;. 
+&#xAC1D;&#xCCB4; &#xBAA8;&#xB378;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xC11C; &#xD568;&#xC218;&#xB97C; &#xB9CC;&#xB4E4;&#xACE0; &#xC2F6;&#xC740; &#xAC83;&#xACFC;&#xB294; &#xB2E4;&#xB978;&#xAC70;&#xB77C; &#xBCF8;&#xB2E4;.</p>
+<p>[&#xCC38;&#xACE0;] JavaScript Patterns</p>
 
                                 
                                 </section>
@@ -525,12 +509,12 @@ countSeconds(<span class="hljs-number">3</span>)
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 9월">
+                <a href="../23/20191023_je.html" class="navigation navigation-prev " aria-label="Previous page: 지으니 면접 준비 part1">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../../object_js/" class="navigation navigation-next " aria-label="Next page: 오브젝트, 자바스크립트화">
+                <a href="../31/20191031_je.html" class="navigation navigation-next " aria-label="Next page: 지으니 면접 준비 part2">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -541,7 +525,7 @@ countSeconds(<span class="hljs-number">3</span>)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"클로져","level":"3.1.1","depth":2,"next":{"title":"오브젝트, 자바스크립트화","level":"3.1.2","depth":2,"path":"docs/object_js/index.md","ref":"./docs/object_js/index.md","articles":[{"title":"티켓 판매 애플리케이션","level":"3.1.2.1","depth":3,"path":"docs/object_js/1.theater.md","ref":"./docs/object_js/1.theater.md","articles":[]}]},"previous":{"title":"9월","level":"3.1","depth":1,"path":"docs/201909/index.md","ref":"./docs/201909/index.md","articles":[{"title":"클로져","level":"3.1.1","depth":2,"path":"docs/201909/18/20190918_je.md","ref":"./docs/201909/18/20190918_je.md","articles":[]},{"title":"오브젝트, 자바스크립트화","level":"3.1.2","depth":2,"path":"docs/object_js/index.md","ref":"./docs/object_js/index.md","articles":[{"title":"티켓 판매 애플리케이션","level":"3.1.2.1","depth":3,"path":"docs/object_js/1.theater.md","ref":"./docs/object_js/1.theater.md","articles":[]}]},{"title":"자바스크립트 기본","level":"3.1.3","depth":2,"path":"docs/201909/javascript_engine.md","ref":"./docs/201909/javascript_engine.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["etoc","splitter","expandable-chapters-small","toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daily JSJSTIME","gitbook":"*"},"file":{"path":"docs/201909/18/20190918_je.md","mtime":"2019-10-23T00:22:47.069Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-03T15:08:39.079Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"자바스크립트 디자인 패턴","level":"3.2.2","depth":2,"next":{"title":"지으니 면접 준비 part2","level":"3.2.3","depth":2,"path":"docs/201910/31/20191031_je.md","ref":"./docs/201910/31/20191031_je.md","articles":[]},"previous":{"title":"지으니 면접 준비 part1","level":"3.2.1","depth":2,"path":"docs/201910/23/20191023_je.md","ref":"./docs/201910/23/20191023_je.md","articles":[]},"dir":"ltr"},"config":{"plugins":["etoc","splitter","expandable-chapters-small","toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"etoc":{"h2lb":3,"header":1,"maxdepth":4,"mindepth":3,"notoc":false},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Daily JSJSTIME","gitbook":"*"},"file":{"path":"docs/201910/26/20191026_je.md","mtime":"2019-11-03T14:41:27.295Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-03T15:08:39.079Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
